@@ -1,0 +1,4 @@
+wowBtcgood|>=|BTC/USDT|23456.0|C:\Users\Cade\Desktop\music\AlertSoundEffect.mp3
+btcIsBigKing|>=|XRP/BTC|3.0|C:\Users\Cade\Desktop\music\AlertSoundEffect.mp3
+truifbig|>=|BCH/BTC|123.0|C:\Users\Cade\Desktop\music\AlertSoundEffect.mp3
+EOS Alert|>=|EOS/ETH|0.01|C:\Users\Cade\Desktop\Hyperbolic Time Chamber.mp3

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.createAlertController">
+   <children>
+      <ImageView fitHeight="123.0" fitWidth="148.0" layoutX="290.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BC_Logo_.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="289.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BTC Pairings" textAlignment="CENTER" wrappingWidth="123.0">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="131.0" fitWidth="82.0" layoutX="90.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@eth.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="82.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ETH Pairings" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="ethPairings" layoutX="55.0" layoutY="236.0" prefWidth="150.0" promptText="N/A" visibleRowCount="20" />
+      <ComboBox fx:id="btcPairings" layoutX="275.0" layoutY="236.0" prefWidth="150.0" promptText="N/A" visibleRowCount="20" />
+      <ComboBox fx:id="usdtPairings" layoutX="499.0" layoutY="236.0" prefWidth="150.0" promptText="N/A" visibleRowCount="20" />
+      <TextField fx:id="alertNameField" layoutX="158.0" layoutY="350.0" prefHeight="25.0" prefWidth="151.0" promptText="Name Your Alert" />
+      <TextField fx:id="alertPriceField" layoutX="159.0" layoutY="393.0" prefHeight="25.0" prefWidth="151.0" promptText="Enter Price" />
+      <RadioButton fx:id="above" layoutX="158.0" layoutY="443.0" mnemonicParsing="false" text="Above (&gt;)">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="below" layoutX="253.0" layoutY="443.0" mnemonicParsing="false" text="Below (&lt;)">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="chooseAudioFile" layoutX="178.0" layoutY="489.0" mnemonicParsing="false" text="Choose audio file">
+         <font>
+            <Font name="Arial Narrow" size="14.0" />
+         </font>
+      </Button>
+      <TextField layoutX="154.0" layoutY="533.0" prefHeight="25.0" prefWidth="157.0" promptText="Phone Number (Optional)" />
+      <Button fx:id="confirmButton" layoutX="490.0" layoutY="535.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="87.0" text="Confirm">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="591.0" layoutY="535.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="73.0" text="Exit">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="131.0" fitWidth="141.0" layoutX="508.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tether.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="519.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USDT Pairings">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="259.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Your Alert" wrappingWidth="212.37890625">
+         <font>
+            <Font name="Arial Narrow Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Alert Price:" wrappingWidth="123.0">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="12.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Alert Sound:">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alert Name:">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="390.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Price:">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="currentPrice" layoutX="506.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" wrappingWidth="101.162109375">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="moreThanOnePairing" fill="RED" layoutX="183.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cannot Select More Than One Pair" textAlignment="CENTER" underline="true" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="365.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pairing Selected:">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="pairingSelected" layoutX="506.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="priceMustBeNumber" fill="RED" layoutX="161.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price must be a number!" underline="true" visible="false">
+         <font>
+            <Font name="Arial Narrow" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="mustBeAudio" fill="RED" layoutX="154.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Must be an Audio File!" visible="false">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Above or Below Alert Price:" textAlignment="CENTER" wrappingWidth="123.0">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="8.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number (Optional)" textAlignment="CENTER" wrappingWidth="150.0">
+         <font>
+            <Font name="Arial Narrow" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

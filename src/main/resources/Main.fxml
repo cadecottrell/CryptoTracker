@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.createMainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Alerts">
+            <items>
+              <MenuItem fx:id="alertCreationTab" mnemonicParsing="false" text="Create an Alert..." />
+                  <MenuItem fx:id="manageAlertsTab" mnemonicParsing="false" text="Manage Alerts..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="375.0" prefWidth="262.0" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="alertVBox" prefHeight="375.0" prefWidth="240.0" style="-fx-border-color: transparent; -fx-border-width: 2; -fx-padding: -2;" />
+         </content>
+      </ScrollPane>
+   </left>
+   <center>
+      <VBox alignment="CENTER_LEFT" prefHeight="375.0" prefWidth="349.0" scaleShape="false" style="-fx-border-color: transparent transparent transparent black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="114.0" prefWidth="339.0">
+               <children>
+                  <ImageView fitHeight="97.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@BC_Logo_.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="138.0" prefWidth="193.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BTC/USDT" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Narrow" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="btcPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Narrow" size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="129.0" prefWidth="334.0" style="-fx-border-color: black transparent transparent transparent; -fx-border-width: 2;">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@eth.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="138.0" prefWidth="193.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ETH/USDT" textAlignment="CENTER" wrappingWidth="144.775390625">
+                           <font>
+                              <Font name="Arial Narrow" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="ethPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A">
+                           <font>
+                              <Font name="Arial Narrow" size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="334.0" style="-fx-border-color: black transparent transparent transparent; -fx-border-width: 2;">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@realite.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin></ImageView>
+                  <VBox alignment="CENTER" prefHeight="138.0" prefWidth="193.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LTC/USDT">
+                           <font>
+                              <Font name="Arial Narrow" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="ltcPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="N/A" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Narrow" size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

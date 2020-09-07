@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation group: "com.twilio.sdk", name: "twilio", version: "7.42.0"
+    compile group: 'com.webcerebrium', name: 'binance-api', version: '1.0.9'
+}
+
+javafx {
+    modules = [ 'javafx.controls' , 'javafx.fxml', 'javafx.media']
+    version = '11.0.2'
+}
+
+mainClassName = 'sample.Main'
