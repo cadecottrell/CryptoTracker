@@ -23,3 +23,9 @@ Once everything is set up to the user's specifications, clicking confirm will se
 Here is the new updated list:
 
 ![Image of updated list](Pictures/listUpdated.png)
+<br><br>
+Once the alert is triggered, an alert dialog will show up on the screen and an optional text will be sent to your number. After this, the alert in the list will be removed.<br>
+The alert dialog:
+![Image of dialog](Pictures/alertNotification.png)
+
+And thats how this application works, thanks for reading!
