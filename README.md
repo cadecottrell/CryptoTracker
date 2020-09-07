@@ -1,14 +1,14 @@
 # CryptoTracker
 This java desktop application allows the user to follow certain cryptocurrency pairings and set alerts for when its price goes above or below a certain price. <br>
-At the main screen, there will always be three pairings, BTC/USD (Bitcoin to Dollar), ETH/USD (Ethereum to Dollar), LTC/USD (Litecoin to Dollar). These are permanent and cannot be removed. <br>
+At the main screen, there will always be three pairings, BTC/USD (Bitcoin to Dollar), ETH/USD (Ethereum to Dollar), LTC/USD (Litecoin to Dollar). These are permanent and cannot be removed. <br> <br>
 Here is what the main screen looks like:
 
 ![Image of Main screen](Pictures/Main.png)
-<br>
+<br><br>
 The list on the side will be empty as you have no custom alerts setup yet. Setting up alerts is easy, just go to the toolbar and click "Create an Alert..."
 
 ![Image of Toolbar Navigation](Pictures/alerts.png)
-<br>
+<br><br>
 From there, a new menu will appear. It will look like this:
 ![Image of Create Alert](Pictures/createAlert.png)
 
